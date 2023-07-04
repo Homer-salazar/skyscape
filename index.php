@@ -37,7 +37,6 @@
                     $lat = $_GET['lat'];
                     $lon = $_GET['lon'];
                     $weatherData = $weatherAPI->getWeatherData($lat, $lon);
-            
                     ?>
                     <section>
                         <div class="flex items-center px-5 py-5 lg:w-3/6 mx-auto">   
@@ -75,13 +74,7 @@
                 <?php foreach ($countries as $country) {
                     $weatherData = $weatherAPI->getWeatherbyCountry($country); // Make API request for each country
 
-                    if ($weatherData) {
-                        $temp = round($weatherData['main']['temp'] - 273.15);
-                        $weather = $weatherData['weather'][0]['main'];
-                        $cityName = $weatherData['name'];
-                        $countryName = $weatherData['sys']['country'];
-                        $weatherIcon = $weatherData['weather'][0]['icon'];
-                    } else {
+                    if (!$weatherData) {
                         echo "Error fetching weather data for $country.";
                         continue; // Skip to the next iteration if there's an error
                     }
@@ -92,14 +85,14 @@
                                 <div class="grid grid-cols-2">
                                     <div class="col-span-1 text-left">
                                         <div class="text-3xl max-sm:text-xl font-semibold">
-                                                <span><?php echo $cityName; ?></span>, <span><?php echo $countryName; ?></span>
+                                                <span><?=$weatherAPI->cityName; ?></span>, <span><?=$weatherAPI->countryName; ?></span>
                                             </div>
                                             <div class="font-bold text-3xl max-sm:text-lg mt-2">
-                                                <?php echo $temp ." °C" ?>
+                                                <?=$weatherAPI->temp ." °C" ?>
                                         </div>
                                     </div>
                                     <div class="col-span-1">
-                                        <img class="p-0" src="https://openweathermap.org/img/wn/<?php echo $weatherIcon; ?>@2x.png">
+                                        <img class="p-0" src="https://openweathermap.org/img/wn/<?=$weatherAPI->weatherIcon; ?>@2x.png">
                                     </div>
                                 </div>
                             </a>                    
