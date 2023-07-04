@@ -40,7 +40,7 @@
                     ?>
                     <section>
                         <div class="flex items-center px-5 py-5 lg:w-3/6 mx-auto">   
-                            <a href="./pages/current.php?city=<?php echo $cityName; ?>" class="mx-auto w-full p-6 bg-[var(--secondary-button)] border border-[var(--secondary-button)] rounded-lg shadow hover:bg-gray-100 dark:bg-[var(--secondary-button)] dark:border-[var(--primary-button)] dark:hover:bg-[var(--primary-button)]">
+                            <a href="./pages/current.php?city=<?=$weatherAPI->cityName; ?>" class="mx-auto w-full p-6 bg-[var(--secondary-button)] border border-[var(--secondary-button)] rounded-lg shadow hover:bg-gray-100 dark:bg-[var(--secondary-button)] dark:border-[var(--primary-button)] dark:hover:bg-[var(--primary-button)]">
                                 <div class="grid grid-cols-2">
                                     <div class="col-span-1 text-left">
                                         <img class="p-0" src="https://openweathermap.org/img/wn/<?=$weatherAPI->weatherIcon ?>@2x.png" alt="">
