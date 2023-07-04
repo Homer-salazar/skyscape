@@ -28,36 +28,36 @@
         </section>
         <section>
             <div class="flex items-center px-5 py-5 lg:w-3/6 mx-auto">   
-                <div class="grid grid-cols-3 grid-rows-2 text-center mx-auto w-full bg-[var(--secondary-button)] border border-[var(--secondary-button)] rounded-lg shadow">
+                <div class="grid grid-cols-3 grid-rows-2 text-center mx-auto w-full glossy rounded-lg shadow">
                     <div class="p-3">
                         <i class="fa-solid fa-xl fa-compress-arrows-alt"></i>                        
                         <p class="py-1"><?=$weatherAPI->pressure; ?> hpa</p>
-                        <p class="text-gray-400">Pressure</p>
+                        <p class="text-gray-300">Pressure</p>
                     </div>
                     <div class="p-3">
                         <i class="fa-solid fa-xl fa-wind"></i>
                         <p class="py-1"><?=$weatherAPI->wind; ?> km/h</p>
-                        <p class="text-gray-400">Wind</p>
+                        <p class="text-gray-300">Wind</p>
                     </div>
                     <div class="p-3">
                         <i class="fa-solid fa-xl fa-eye"></i>
                         <p class="py-1"><?=$weatherAPI->visibility; ?> km</p>
-                        <p class="text-gray-400">Visibility</p>
+                        <p class="text-gray-300">Visibility</p>
                     </div>
                     <div class="p-3">
                         <i class="fa-solid fa-xl fa-droplet"></i>
                         <p class="py-1"><?=$weatherAPI->humidity; ?> %</p>
-                        <p class="text-gray-400">Humidity</p>
+                        <p class="text-gray-300">Humidity</p>
                     </div>
                     <div class="p-3">
                         <i class="fa-solid fa-xl fa-temperature-quarter"></i>
                         <p class="py-1"><?=$weatherAPI->minTemp; ?> %</p>
-                        <p class="text-gray-400">Min Temp</p>
+                        <p class="text-gray-300">Min Temp</p>
                     </div>
                     <div class="p-3">
                         <i class="fa-solid fa-xl fa-temperature-quarter"></i>
                         <p class="py-1"><?=$weatherAPI->maxTemp; ?> %</p>
-                        <p class="text-gray-400">Max Temp</p>
+                        <p class="text-gray-300">Max Temp</p>
                     </div>
                 </div>
             </div>
