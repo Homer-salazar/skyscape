@@ -4,8 +4,8 @@
     $weatherAPI = new WeatherAPI();
 ?>
 
-    <div class="container-fluid mx-auto bg h-screen">
-        <div class="flex justify-between">
+    <div class="container-fluid mx-auto bg h-[105vh]">
+        <div class="flex justify-between sticky top-0">
             <div class="px-3 py-1 text-2xl font-bold">Skyscape</div>
             <div class="px-5 py-3">
                 <a href="search.php">
@@ -40,7 +40,7 @@
                     </div>
                 </div>
                 <section>
-                    <div class="flex items-center px-5 py-2 lg:w-3/6 mx-auto">   
+                    <div class="flex items-center px-5 py-2 lg:w-3/6 mx-auto pb-10">   
                         <div class="grid grid-cols-3 grid-rows-2 text-center mx-auto w-full glossy rounded-lg shadow">
                             <div class="p-3">
                                 <i class="fa-solid fa-xl fa-compress-arrows-alt"></i>                        

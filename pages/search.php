@@ -11,9 +11,9 @@
     }
     
 ?>
-    <div class="container-fluid mx-auto search-bg h-screen">
-        <div class="grid">
-            <div class="px-4 py-4 text-white">
+    <div class="container-fluid mx-auto search-bg h-[105vh]">
+        <div class="grid sticky top-0">
+            <div class="px-4 pt-3 text-white">
                 <a href="current.php" class="fa-solid fa-arrow-left fa-2xl max-sm:text-lg"> </a>
             </div>
         </div>
