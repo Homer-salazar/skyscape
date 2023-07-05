@@ -15,24 +15,32 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    background-image: url(../assets/background.svg);
-    background-size: cover;    
-    background-repeat: no-repeat;
-    /* background: var(--background); */
     color: var(--text);
 }
 
 .glossy{
     background: rgba( 255, 255, 255, 0.25 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 4px );
--webkit-backdrop-filter: blur( 4px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 #gradient{
     background-image: url(../assets/gradient.svg);
+    background-size: cover;    
+    background-repeat: no-repeat;
+}
+
+.bg{
+    background-image: url(../assets/background.svg);
+    background-size: cover;    
+    background-repeat: no-repeat;
+}
+
+.search-bg{
+    background-image: url(../assets/search.svg);
     background-size: cover;    
     background-repeat: no-repeat;
 }

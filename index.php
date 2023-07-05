@@ -27,7 +27,7 @@
                 <div class="text-white italic mt-2 text-center">
                     <p>Your Personalized Weather Experience.</p>
                 </div>
-                <div class="text-center mt-3">
+                <div class="text-center mt-5">
                     <a href="./pages/current.php" class="px-5 py-2 gap-3 bg-blue-500 border-2 border-blue-500 rounded-lg cursor-pointer transition duration-400 hover:bg-transparent hover:border-blue-500">
                         <span class="text-white font-semibold text-base transition duration-400">Get Start</span>     
                     </a>
